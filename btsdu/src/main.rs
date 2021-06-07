@@ -113,12 +113,12 @@ fn write_tree(w: &mut io::Write, tree: FileTreeNode) {
 
 fn main() {
     let matches = App::new("btsdu")
-        .about("Analyses disc usage of btrfs snapshots in tree forms (using ncdu).")
+        .about("Analyses disk usage of btrfs snapshots in tree forms (using ncdu).")
         .author("Roman Kapl <code@rkapl.cz>")
         .arg(Arg::with_name("input")
             .value_name("INPUT")
             .required(true)
-            .help("Subvolume location to analyze. If -s is given, this btrfs-send output msut be specified instead."))
+            .help("Subvolume location to analyze. If -s is given, this btrfs-send output must be specified instead."))
         .arg(Arg::with_name("parent")
             .short("-p")
             .value_name("PARENT")
